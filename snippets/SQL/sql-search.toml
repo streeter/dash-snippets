@@ -1,0 +1,5 @@
+[snippet]
+body = "SELECT __fields__ FROM __table__ WHERE __field__ LIKE '%__string__%'"
+syntax = "SQL"
+tag = "SQL"
+title = "sql-search#"

@@ -1,0 +1,5 @@
+[snippet]
+body = "selector {\n  filter: alpha(opacity=60); /* MSIE/PC */\n  -moz-opacity: 0.6; /* Mozilla 1.6 and older */\n  opacity: 0.6;\n}"
+syntax = "CSS"
+tag = "CSS"
+title = "opacity-hack#"

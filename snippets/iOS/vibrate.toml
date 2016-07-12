@@ -1,0 +1,5 @@
+[snippet]
+body = "AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);"
+syntax = "Objective-C"
+tag = "iOS"
+title = "vibrate#"

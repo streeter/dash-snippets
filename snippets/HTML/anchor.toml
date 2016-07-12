@@ -1,0 +1,5 @@
+[snippet]
+body = "<a href=\"@clipboard\">@cursor</a>"
+syntax = "HTML"
+tag = "HTML"
+title = "anchor#"

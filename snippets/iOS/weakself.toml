@@ -1,0 +1,5 @@
+[snippet]
+body = "__weak typeof(self)weakSelf = self;"
+syntax = "Objective-C"
+tag = "iOS"
+title = "weakself#"

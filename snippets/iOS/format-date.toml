@@ -1,0 +1,5 @@
+[snippet]
+body = "NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];\n[dateFormat setDateFormat: @\"yyyy-MM-dd HH:mm:ss zzz\"]; // 2009-02-01 19:50:41 PST\nNSString *dateString = [dateFormat stringFromDate:__date__];\n[dateFormat release];"
+syntax = "Objective-C"
+tag = "iOS"
+title = "format-date#"

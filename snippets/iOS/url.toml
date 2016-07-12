@@ -1,0 +1,5 @@
+[snippet]
+body = "NSURL *url = [[NSURL alloc] initWithString:@\"__theURL__\"];\n[[UIApplication sharedApplication] openURL:url];\n[url release];"
+syntax = "Objective-C"
+tag = "iOS"
+title = "url#"

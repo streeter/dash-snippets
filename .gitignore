@@ -1,0 +1,4 @@
+.env
+.ruby-gemset
+.ruby-version
+*.pyc

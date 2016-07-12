@@ -1,0 +1,5 @@
+[snippet]
+body = "NSNotificationCenter *dnc = [NSNotificationCenter defaultCenter];\n"
+syntax = "Objective-C"
+tag = "iOS"
+title = "dnc#"

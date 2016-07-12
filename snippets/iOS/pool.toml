@@ -1,0 +1,5 @@
+[snippet]
+body = "NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];\n@cursor\n[pool drain];"
+syntax = "Objective-C"
+tag = "iOS"
+title = "pool#"

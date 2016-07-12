@@ -1,0 +1,5 @@
+[snippet]
+body = "//------------------------------------------------------------------------------\n#pragma mark -\n#pragma mark @cursor"
+syntax = "Objective-C"
+tag = "iOS"
+title = "pragma#"

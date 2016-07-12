@@ -1,0 +1,5 @@
+[snippet]
+body = "@date"
+syntax = "Standard"
+tag = "JavaScript"
+title = "@date"

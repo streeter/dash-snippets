@@ -1,0 +1,5 @@
+[snippet]
+body = "// Browser detection\n\n// Internet Explorer\nvar ie  = document.all != null;  //ie4 and above\nvar ie5 = document.getElementById && document.all;\nvar ie6 = document.getElementById && document.all&&(navigator.appVersion.indexOf(\"MSIE 6.\")>=0);\n\n// Netscape\nvar ns4 = document.layers != null;\nvar ns6 = document.getElementById && !document.all;\nvar ns  = ns4 || ns6;\n\n// Firefox\nvar ff  = !document.layers && !document.all;\n\n// Opera\nvar op  = navigator.userAgent.indexOf(\"opera\")>0;\nvar op7 = op && operaVersion() <= 7;\nvar op8 = op && operaVersion() >= 8;\n\n// Detects the Opera version\nfunction operaVersion() {\n\tagent = navigator.userAgent;\n\tidx = agent.indexOf(\"opera\");\t\n\tif (idx>-1) {\n\t\treturn parseInt(agent.subString(idx+6,idx+7));\n\t}\n}"
+syntax = "JavaScript"
+tag = "JavaScript"
+title = "browser-detection#"

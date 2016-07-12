@@ -1,0 +1,5 @@
+[snippet]
+body = "/**\n * @cursor\n */\n "
+syntax = "Objective-C"
+tag = "JavaScript"
+title = "///#"

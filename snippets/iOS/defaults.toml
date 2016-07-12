@@ -1,0 +1,5 @@
+[snippet]
+body = "NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];"
+syntax = "Objective-C"
+tag = "iOS"
+title = "defaults#"

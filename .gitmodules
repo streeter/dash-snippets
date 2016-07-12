@@ -1,0 +1,3 @@
+[submodule "Macmoji"]
+	path = Macmoji
+	url = https://github.com/warpling/Macmoji.git

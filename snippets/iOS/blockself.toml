@@ -1,0 +1,5 @@
+[snippet]
+body = "__block typeof(self)blockSelf = self;"
+syntax = "Objective-C"
+tag = "iOS"
+title = "blockself#"

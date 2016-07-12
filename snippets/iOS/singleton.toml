@@ -1,0 +1,5 @@
+[snippet]
+body = "#import \"__class__.h\"\n\n@implementation __class__\n\n+ (__class__ *)__accessor__\n{\n    static dispatch_once_t once;\n    static __class__ *__singleton__;\n    dispatch_once(&once, ^ { __singleton__ = [[__class__ alloc] init]; });\n    return __singleton__;\n}\n\n@cursor\n\n@end"
+syntax = "Objective-C"
+tag = "iOS"
+title = "singleton#"
