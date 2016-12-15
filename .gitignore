@@ -2,3 +2,4 @@
 .ruby-gemset
 .ruby-version
 *.pyc
+node_modules

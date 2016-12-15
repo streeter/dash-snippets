@@ -1,0 +1,20 @@
+{
+  "name": "dash-snippets",
+  "version": "1.0.0",
+  "description": "Dash Snippets",
+  "main": "index.js",
+  "dependencies": {
+    "emojilib": "^2.0.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streeter/dash-snippets.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/streeter/dash-snippets/issues"
+  },
+  "homepage": "https://github.com/streeter/dash-snippets#readme"
+}
