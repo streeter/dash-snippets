@@ -19,6 +19,7 @@ tag = "Emoji"
 title = ":{shortname}:"
 """
 
+# These override other stuff
 ALIASES = {
     'tada': [
         'celebration',
@@ -65,6 +66,10 @@ for shortname, emoji_dict in json_dict.items():
     # Add the primary to the front of the array, since that is always the one
     # we want.
     emoji_keywords[valid_shortname].insert(0, emoji)
+
+    local_aliases = ALIASES.get(valid_shortname, [])
+    for alias in local_aliases:
+        emoji_keywords[alias].insert(0, emoji)
 
     # Add all aliases to the end of the array
     for keyword in emoji_dict['keywords']:
