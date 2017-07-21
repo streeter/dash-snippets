@@ -1,5 +1,5 @@
 require 'sqlite3'
-require 'toml'
+require 'toml-rb'
 require 'dotenv'
 require 'logger'
 require 'fileutils'
@@ -61,7 +61,7 @@ namespace :dash do
       end
       FileUtils.mkdir_p(path)
       filename = normalize_filename(inner[:title])
-      File.open("#{path}/#{filename}.toml", "w") {|e|e.puts TOML.dump(outer) }
+      File.open("#{path}/#{filename}.toml", "w") {|e|e.puts TomlRB.dump(outer) }
       @logger.debug("\t complete output #{path}/#{filename}.toml ")
     end
     @logger.debug('finish dump snippets')
@@ -79,7 +79,7 @@ namespace :dash do
 
   def load_snippets
     @snippets = Dir.glob("#{TOML_PATH}/**/*.toml").each_with_object([]) do |e, memo|
-      memo << TOML.load_file(e)[SNIPPET]
+      memo << TomlRB.load_file(e)[SNIPPET]
     end
   end
 
