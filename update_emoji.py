@@ -2,6 +2,7 @@
 
 import codecs
 import collections
+import itertools
 import json
 import re
 import os
@@ -71,8 +72,11 @@ for shortname, emoji_dict in json_dict.items():
     for alias in local_aliases:
         emoji_keywords[alias].insert(0, emoji)
 
+    # Split the aliases up
+    shortname_pieces = valid_shortname.split('_')
+
     # Add all aliases to the end of the array
-    for keyword in emoji_dict['keywords']:
+    for keyword in itertools.chain(shortname_pieces, emoji_dict['keywords']):
         valid_keyword = create_shortname(keyword)
         if not valid_keyword:
             print(u'Shortname {} is not a valid emoji keyword'.format(
