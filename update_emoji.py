@@ -25,6 +25,9 @@ ALIASES = {
     'tada': [
         'celebration',
     ],
+    'ok_hand': [
+        'ok',
+    ],
 }
 
 slugger = Slugger(lang='en_US')
