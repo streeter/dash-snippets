@@ -4,7 +4,7 @@
   "description": "Dash Snippets",
   "main": "index.js",
   "dependencies": {
-    "emojilib": "^2.2.9"
+    "emojilib": "2.2.12"
   },
   "devDependencies": {},
   "repository": {
