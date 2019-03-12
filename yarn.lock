@@ -5,3 +5,4 @@
 emojilib@2.2.12:
   version "2.2.12"
   resolved "https://registry.yarnpkg.com/emojilib/-/emojilib-2.2.12.tgz#29481fa5521ac5ed97a5cc0503901c3435d523fa"
+  integrity sha512-mLNN5AY5Yl1BUeP+r9hFjWvyA1X+QWlS5iQzeVnQoZaklq3IIknm9FwP23QwD7Rg1H3dy35JYQHJyoKNFkxrvg==
