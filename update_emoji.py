@@ -81,12 +81,7 @@ for shortname, emoji_dict in json_dict.items():
         emoji_keywords[alias].insert(0, emoji)
 
     # Split the aliases up
-    pieces = re.split(r'_|\-', valid_shortname)
-
-    shortname_pieces = pieces[:]
-    shortname_pieces.append('-'.join(pieces))
-    shortname_pieces.append('_'.join(pieces))
-    shortname_pieces.append(''.join(pieces))
+    shortname_pieces = valid_shortname.split('_')
 
     # Add all aliases to the end of the array
     for keyword in itertools.chain(shortname_pieces, emoji_dict['keywords']):
@@ -94,8 +89,6 @@ for shortname, emoji_dict in json_dict.items():
         if not valid_keyword:
             print(u'Shortname {} is not a valid emoji keyword'.format(
                 keyword))
-            continue
-        if emoji is None:
             continue
         emoji_keywords[valid_keyword].append(emoji)
 
