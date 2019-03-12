@@ -28,13 +28,16 @@ ALIASES = {
     'ok_hand': [
         'ok',
     ],
+    'chipmunk': [
+        'shipit',
+    ]
 }
 
 slugger = Slugger(lang='en_US')
 
 # Read the json file
 with open(json_path) as f:
-    json_dict = json.loads(f.read())
+    json_dict = json.loads(f.read(), encoding='utf8')
 
 emoji_keywords = collections.defaultdict(list)
 
@@ -60,6 +63,8 @@ def write_emoji(emoji_symbol, emoji_name):
 # Populate the set of keywords
 for shortname, emoji_dict in json_dict.items():
     emoji = emoji_dict['char']
+    if emoji is None:
+        continue
 
     valid_shortname = create_shortname(shortname)
     if not valid_shortname:
