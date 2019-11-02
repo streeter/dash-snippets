@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-emojilib@2.2.12:
-  version "2.2.12"
-  resolved "https://registry.yarnpkg.com/emojilib/-/emojilib-2.2.12.tgz#29481fa5521ac5ed97a5cc0503901c3435d523fa"
-  integrity sha512-mLNN5AY5Yl1BUeP+r9hFjWvyA1X+QWlS5iQzeVnQoZaklq3IIknm9FwP23QwD7Rg1H3dy35JYQHJyoKNFkxrvg==
+emojilib@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/emojilib/-/emojilib-2.4.0.tgz#ac518a8bb0d5f76dda57289ccb2fdf9d39ae721e"
+  integrity sha512-5U0rVMU5Y2n2+ykNLQqMoqklN9ICBT/KsvC1Gz6vqHbz2AXXGkG+Pm5rMWk/8Vjrr/mY9985Hi8DYzn1F09Nyw==
